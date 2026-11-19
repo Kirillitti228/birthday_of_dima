@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>С днём рождения, Дим!</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main id="welcome" class="screen welcome-screen">
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <div class="welcome-content">
+      <h1>HAPPY<br><span>BIRTHDAY!</span></h1>
+      <div class="intro-text">
+        <p>С днём рождения!</p>
+        <p>Дим, ты являешься большой и очень важной частью моей жизни. И я всегда хочу видеть тебя счастливым и радостным.</p>
+        <p>Мне жаль, что сегодня я не могу поздравить тебя лично, но я сделаю это завтра. Но пока что не забывай, что сегодня не просто твой день рождения, у тебя сегодня юбилей. Поэтому я решил сделать для тебя кое-что интересное.</p>
+      </div>
+      <button id="enterBtn" class="primary-button">Тицні сюди <span>↓</span></button>
+    </div>
+  </main>
+
+
+  <main id="letters" class="screen letters-screen hidden">
+    <header class="letters-header">
+      <div class="tiny-star">✦</div>
+      <h2>Письма с воспоминаниями</h2>
+      <p>Каждое письмо хранит один особенный момент.</p>
+    </header>
+    <div id="envelopeField" class="envelope-field" aria-label="Письма с воспоминаниями"></div>
+    <button id="backHome" class="back-button">← На главную</button>
+    <div class="footer-note">Выбери письмо и открой воспоминание</div>
+  </main>
+
+
+  <div id="memoryModal" class="modal hidden" role="dialog" aria-modal="true" aria-label="Воспоминание">
+    <button id="closeModal" class="modal-close" aria-label="Закрыть">×</button>
+    <div class="modal-card">
+      <p class="modal-kicker">ОТКРЫТОЕ ВОСПОМИНАНИЕ</p>
+      <h3 id="memoryTitle"></h3>
+      <div id="mediaArea" class="media-area"></div>
+      <p id="memoryCaption" class="memory-caption"></p>
+      <button id="returnLetters" class="return-button">← Вернуться к письмам</button>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
